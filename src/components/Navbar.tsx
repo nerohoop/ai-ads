@@ -3,7 +3,7 @@ import { Plane, Smartphone } from "lucide-react";
 
 export default function Navbar() {
   return (
-    <header className="w-full mt-2 mb-4 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 md:px-8">
         {/* Left: Logo + Brand */}
         <Link href="/" className="flex items-center gap-3">
