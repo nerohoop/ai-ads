@@ -20,6 +20,7 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Acceptance of Terms</h2>
               <p className="text-muted-foreground leading-relaxed">
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 By accessing and using AI Ads Creator ("the Service"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
               </p>
             </section>
@@ -77,6 +78,7 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">8. Disclaimers</h2>
               <p className="text-muted-foreground leading-relaxed">
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 The Service is provided on an "AS IS" and "AS AVAILABLE" basis. We make no representations or warranties of any kind, express or implied, as to the operation of the Service or the information, content, materials, or products included on the Service.
               </p>
             </section>
