@@ -1,11 +1,11 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  output: 'export',
-  trailingSlash: true,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",
   images: {
-    unoptimized: true
-  }
+    unoptimized: true,
+  },
+  basePath: "/ai-ads",
+  assetPrefix: "/ai-ads/",
 };
 
 export default nextConfig;
