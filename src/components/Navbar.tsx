@@ -14,24 +14,24 @@ export default function Navbar() {
         </Link>
 
         {/* Center: Primary nav links */}
-        <ul className="hidden md:flex items-center gap-10 text-foreground font-normal">
+        <ul className="hidden md:flex items-center gap-10 text-gray-500 font-normal">
           <li>
-            <Link href="#pricing" className="text-base hover:text-foreground transition-colors">
+            <Link href="#pricing" className="text-base hover:text-black hover:bg-gray-100 hover:font-medium px-3 py-2 rounded-lg transition-all duration-200">
               Pricing
             </Link>
           </li>
           <li>
-            <Link href="#about" className="text-base hover:text-foreground transition-colors">
+            <Link href="#about" className="text-base hover:text-black hover:bg-gray-100 hover:font-medium px-3 py-2 rounded-lg transition-all duration-200">
               About
             </Link>
           </li>
           <li>
-            <Link href="#passport" className="text-base hover:text-foreground transition-colors">
+            <Link href="#passport" className="text-base hover:text-black hover:bg-gray-100 hover:font-medium px-3 py-2 rounded-lg transition-all duration-200">
               Passport
             </Link>
           </li>
           <li>
-            <Link href="#help" className="text-base hover:text-foreground transition-colors">
+            <Link href="#help" className="text-base hover:text-black hover:bg-gray-100 hover:font-medium px-3 py-2 rounded-lg transition-all duration-200">
               Help Center
             </Link>
           </li>
@@ -40,7 +40,7 @@ export default function Navbar() {
         {/* Right: Call to action */}
         <Link
           href="#app"
-          className="inline-flex items-center gap-2 text-base font-medium text-foreground hover:opacity-80"
+          className="inline-flex items-center gap-2 text-base font-normal text-gray-500 hover:text-black hover:bg-gray-100 hover:font-medium px-3 py-2 rounded-lg transition-all duration-200"
         >
           Get the app
           <Smartphone className="h-5 w-5" aria-hidden />
