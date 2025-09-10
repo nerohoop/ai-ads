@@ -30,15 +30,16 @@ export default function KeyFeatures() {
   ];
 
   return (
-    <section id="features" className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-12 md:py-20">
-      <div className="space-y-6 text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Key Features</h2>
-        <p className="text-foreground/80 max-w-2xl mx-auto">
-          Everything you need to produce high-performing ads — fast, on-brand, and at scale.
-        </p>
-      </div>
+    <section id="features" className="w-full min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 py-16 md:py-24">
+      <div className="w-full max-w-6xl mx-auto space-y-10 md:space-y-14">
+        <header className="space-y-3 text-center">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">Key Features</h2>
+          <p className="text-base sm:text-lg text-foreground/80 max-w-2xl mx-auto">
+            Everything you need to produce high-performing ads — fast, on-brand, and at scale.
+          </p>
+        </header>
 
-      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {features.map(({ icon: Icon, title, description }) => (
           <div
             key={title}
@@ -55,6 +56,7 @@ export default function KeyFeatures() {
             </div>
           </div>
         ))}
+        </div>
       </div>
     </section>
   );

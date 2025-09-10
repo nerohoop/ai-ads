@@ -2,10 +2,10 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export default function FAQ() {
   return (
-    <section id="faq" className="w-full max-w-4xl mx-auto px-4 sm:px-6 md:px-8 py-16 md:py-24">
-      <div className="space-y-8">
+    <section id="faq" className="w-full min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 py-16 md:py-24">
+      <div className="w-full max-w-4xl mx-auto space-y-10 md:space-y-14">
         <header className="space-y-3 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Frequently Asked Questions</h2>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">Frequently Asked Questions</h2>
           <p className="text-base sm:text-lg text-foreground/80 max-w-2xl mx-auto">
             Answers to the most common questions about usage, pricing, and rights.
           </p>
