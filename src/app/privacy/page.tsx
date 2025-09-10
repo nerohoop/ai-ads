@@ -20,6 +20,7 @@ export default function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Introduction</h2>
               <p className="text-muted-foreground leading-relaxed">
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 AI Ads Creator ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our service that transforms product images into user-generated content (UGC) style videos.
               </p>
             </section>
@@ -127,6 +128,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
               <h2 className="text-2xl font-semibold text-foreground mb-4">11. Children's Privacy</h2>
               <p className="text-muted-foreground leading-relaxed">
                 Our service is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.
@@ -136,6 +138,7 @@ export default function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">12. Changes to This Privacy Policy</h2>
               <p className="text-muted-foreground leading-relaxed">
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date. We encourage you to review this Privacy Policy periodically.
               </p>
             </section>
