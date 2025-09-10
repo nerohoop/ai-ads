@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import {useState, FormEvent, useEffect, useRef} from "react";
+import { useState, FormEvent, useEffect, useRef } from "react";
 import gsap from "gsap";
 
 export default function Hero() {
@@ -18,7 +18,7 @@ export default function Hero() {
     const fullText = "Winning AI Ads, Made Simple";
     titleElement.textContent = "";
 
-    const state = {chars: 0} as {chars: number};
+    const state = { chars: 0 } as { chars: number };
 
     const tl = gsap.timeline();
     tl.to(state, {
@@ -56,17 +56,26 @@ export default function Hero() {
     setEmail("");
   }
   return (
-    <section className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-16 md:py-24">
+    <section className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 min-h-[100svh] flex items-center">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-16">
-        <div className="space-y-6">
-          <h1 className="text-6xl sm:text-7xl font-bold tracking-tight" aria-label="Winning AI Ads, Made Simple">
+        <div className="space-y-6 mx-auto md:mx-0 text-center md:text-left max-w-xl">
+          <h1
+            className="text-6xl sm:text-7xl font-bold tracking-tight"
+            aria-label="Winning AI Ads, Made Simple"
+          >
             <span ref={titleRef} />
-            <span ref={cursorRef} className="ml-1 inline-block align-middle w-[2px] h-[1em] bg-current" />
+            <span
+              ref={cursorRef}
+              className="ml-1 inline-block align-middle w-[2px] h-[1em] bg-current"
+            />
           </h1>
           <p className="text-base sm:text-lg text-foreground/80 max-w-prose">
             Turn Product Images Into Scroll-Stopping UGC Videos in Minutes
           </p>
-          <form onSubmit={handleJoinWaitlist} className="flex flex-col sm:flex-row gap-3">
+          <form
+            onSubmit={handleJoinWaitlist}
+            className="flex flex-col sm:flex-row gap-3"
+          >
             <input
               type="email"
               required
@@ -76,7 +85,9 @@ export default function Hero() {
               aria-label="Email address"
               className="h-11 w-full sm:flex-1 px-4 rounded-md border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
             />
-            <Button type="submit" className="h-11 px-6">Join waitlist</Button>
+            <Button type="submit" className="h-11 px-6">
+              Join waitlist
+            </Button>
           </form>
         </div>
         <div className="relative mx-auto w-full max-w-[380px] aspect-[9/19]">
@@ -98,4 +109,3 @@ export default function Hero() {
     </section>
   );
 }
-
