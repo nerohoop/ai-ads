@@ -56,8 +56,8 @@ export default function Hero() {
     setEmail("");
   }
   return (
-    <section className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 min-h-[100svh] flex items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-16">
+    <section className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 min-h-[100svh] flex items-center relative">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-16 relative z-10">
         <div className="space-y-6 mx-auto md:mx-0 text-center md:text-left max-w-xl">
           <h1
             className="text-6xl sm:text-7xl font-bold tracking-tight"
