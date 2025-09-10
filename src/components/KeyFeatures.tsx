@@ -30,7 +30,7 @@ export default function KeyFeatures() {
   ];
 
   return (
-    <section className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-12 md:py-20">
+    <section id="features" className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-12 md:py-20">
       <div className="space-y-6 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Key Features</h2>
         <p className="text-foreground/80 max-w-2xl mx-auto">

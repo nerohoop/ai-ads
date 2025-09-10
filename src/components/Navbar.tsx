@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { Plane, Smartphone } from "lucide-react";
+import {smoothScrollTo} from "@/lib/utils";
 
 export default function Navbar() {
   return (
@@ -16,35 +19,47 @@ export default function Navbar() {
         {/* Center: Primary nav links */}
         <ul className="hidden md:flex items-center gap-10 text-gray-500 font-normal">
           <li>
-            <Link href="#pricing" className="text-base hover:text-black hover:bg-gray-100 hover:font-medium px-3 py-2 rounded-lg transition-all duration-200">
-              Pricing
-            </Link>
+            <button
+              onClick={() => smoothScrollTo('how-it-works')}
+              className="text-base hover:text-black hover:bg-gray-100 hover:font-medium px-3 py-2 rounded-lg transition-all duration-200"
+            >
+              How It Works
+            </button>
           </li>
           <li>
-            <Link href="#about" className="text-base hover:text-black hover:bg-gray-100 hover:font-medium px-3 py-2 rounded-lg transition-all duration-200">
-              About
-            </Link>
+            <button
+              onClick={() => smoothScrollTo('features')}
+              className="text-base hover:text-black hover:bg-gray-100 hover:font-medium px-3 py-2 rounded-lg transition-all duration-200"
+            >
+              Features
+            </button>
           </li>
           <li>
-            <Link href="#passport" className="text-base hover:text-black hover:bg-gray-100 hover:font-medium px-3 py-2 rounded-lg transition-all duration-200">
-              Passport
-            </Link>
+            <button
+              onClick={() => smoothScrollTo('problem-solution')}
+              className="text-base hover:text-black hover:bg-gray-100 hover:font-medium px-3 py-2 rounded-lg transition-all duration-200"
+            >
+              Why Choose Us
+            </button>
           </li>
           <li>
-            <Link href="#help" className="text-base hover:text-black hover:bg-gray-100 hover:font-medium px-3 py-2 rounded-lg transition-all duration-200">
-              Help Center
-            </Link>
+            <button
+              onClick={() => smoothScrollTo('faq')}
+              className="text-base hover:text-black hover:bg-gray-100 hover:font-medium px-3 py-2 rounded-lg transition-all duration-200"
+            >
+              FAQ
+            </button>
           </li>
         </ul>
 
         {/* Right: Call to action */}
-        <Link
-          href="#app"
+        <button
+          onClick={() => smoothScrollTo('how-it-works')}
           className="inline-flex items-center gap-2 text-base font-normal text-gray-500 hover:text-black hover:bg-gray-100 hover:font-medium px-3 py-2 rounded-lg transition-all duration-200"
         >
-          Get the app
+          Get Started
           <Smartphone className="h-5 w-5" aria-hidden />
-        </Link>
+        </button>
       </nav>
     </header>
   );

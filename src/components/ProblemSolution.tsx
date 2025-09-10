@@ -2,7 +2,7 @@ import { Check, X } from "lucide-react";
 
 export default function ProblemSolution() {
   return (
-    <section className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-12 md:py-20">
+    <section id="problem-solution" className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-12 md:py-20">
       <div className="space-y-10">
         <header className="space-y-3">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Problem / Solution</h2>
