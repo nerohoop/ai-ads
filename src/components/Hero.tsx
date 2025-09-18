@@ -15,7 +15,7 @@ export default function Hero() {
     const cursorElement = cursorRef.current;
     if (!titleElement) return;
 
-    const fullText = "Winning AI Ads, Made Simple";
+    const fullText = "Your AI Creative Partner for Social Video";
     titleElement.textContent = "";
 
     const state = { chars: 0 } as { chars: number };
@@ -57,11 +57,11 @@ export default function Hero() {
   }
   return (
     <section className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 min-h-[100svh] flex items-center relative">
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 md:gap-16 relative z-10">
-        <div className="space-y-6 mx-auto md:mx-0 text-center md:text-left max-w-xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-16 relative z-10">
+        <div className="space-y-5 sm:space-y-6 mx-auto md:mx-0 text-center md:text-left max-w-xl">
           <h1
-            className="text-6xl sm:text-7xl font-bold tracking-tight"
-            aria-label="Winning AI Ads, Made Simple"
+            className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight"
+            aria-label="Your AI Creative Partner for Social Video"
           >
             <span ref={titleRef} />
             <span
@@ -70,7 +70,7 @@ export default function Hero() {
             />
           </h1>
           <p className="text-base sm:text-lg text-foreground/80 max-w-prose">
-            Turn Product Images Into Scroll-Stopping UGC Videos in Minutes
+            Automate the hard parts of video creation so you can focus on building your business
           </p>
           <form
             onSubmit={handleJoinWaitlist}
@@ -85,18 +85,19 @@ export default function Hero() {
               aria-label="Email address"
               className="h-11 w-full sm:flex-1 px-4 rounded-md border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
             />
-            <Button type="submit" className="h-11 px-6">
-              Join waitlist
+            <Button type="submit" className="h-11 px-6 w-full sm:w-auto">
+              Download on the App Store
             </Button>
           </form>
         </div>
-        <div className="relative mx-auto w-full max-w-[380px] aspect-[9/19]">
+        <div className="relative mx-auto w-full max-w-[240px] sm:max-w-[300px] md:w-[calc(70svh*9/19)] md:max-w-none aspect-[9/19]">
           <div className="absolute inset-0 rounded-[2.5rem] border border-black/10 dark:border-white/10 bg-gradient-to-b from-black/5 to-black/10 dark:from-white/10 dark:to-white/5 shadow-xl overflow-hidden">
             <div className="absolute inset-[10px] rounded-[2rem] bg-background overflow-hidden">
               <Image
                 src="/iphone-mock.png"
                 alt="App preview"
                 fill
+                sizes="(max-width: 640px) 240px, (max-width: 768px) 300px, 380px"
                 className="object-cover"
                 priority
               />
